@@ -21,7 +21,7 @@ function EthAdressPicker({ transferInfo, updateAllAddresses }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (values.amount === 0 || values.to === "") {
+    if (!values.amount || values.to === "") {
       setErrorMessage("please fill out all the fields ");
       return;
     }
