@@ -41,7 +41,7 @@ const updateAllAddresses = (obj) => {
   const newBalance = obj.newBalance;
   const addressArr = [...allAddresses];
 
-  addressArr.map((address) => {
+  addressArr.forEach((address) => {
     if (address.account === transferAddress) {
       address.balance = Number(newBalance);
     }

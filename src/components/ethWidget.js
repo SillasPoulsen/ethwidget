@@ -35,7 +35,7 @@ function EthWidget() {
 
     //To set your account to the new balance after transfer and
     //to check if the address you transfer to is your own account
-    addressArr.map((address) => {
+    addressArr.forEach((address) => {
       if (address.account === transferAddress) {
         address.balance = newBalance;
       }
@@ -60,7 +60,7 @@ function EthWidget() {
         const result = await axios.get(endpoint + apiKey);
         const allData = result.data.result;
 
-        allData.map((result) => {
+        allData.forEach((result) => {
           const number = result.balance / Math.pow(10, 18);
           result.balance = Number(number.toFixed(6));
           return allData;
