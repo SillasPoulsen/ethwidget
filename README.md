@@ -13,6 +13,8 @@ Useful scripts:
    "eject": "react-scripts eject"
 ```
 
+Since the app is using an API from Ether scan you would have to create a .env file and add your API Credentials.
+
 ## Description
 
 The Eth widget is a front-end app to send Eth, either between your own accounts or else where.
