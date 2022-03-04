@@ -50,7 +50,7 @@ function EthAdressPicker({ transferInfo, updateAllAddresses }) {
           <div className="top-content">
             <p>Please fill form to send ETH</p>
           </div>
-          <div className="mainContent">
+          <div className="main-content">
             <form>
               <label>
                 From:
