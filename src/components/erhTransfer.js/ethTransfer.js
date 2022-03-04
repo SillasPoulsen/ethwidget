@@ -46,8 +46,8 @@ function EthAdressPicker({ transferInfo, updateAllAddresses }) {
   return (
     <>
       <div className="container">
-        <div className="contentbox">
-          <div className="topContent">
+        <div className="content-box">
+          <div className="top-content">
             <p>Please fill form to send ETH</p>
           </div>
           <div className="mainContent">
@@ -81,7 +81,7 @@ function EthAdressPicker({ transferInfo, updateAllAddresses }) {
               </label>
             </form>
             {errorMessage && <p className="error"> {errorMessage} </p>}
-            <div className="buttonend">
+            <div className="button-end">
               <button className="submit" type="submit" onClick={handleSubmit}>
                 Next
               </button>

@@ -46,24 +46,24 @@ img {
   height: 100vh;
 }
 
-.contentbox {
+.content-box {
   border-radius: 15px;
   border: 1px solid rgba(105, 50, 212, 0.2);
   min-width: 50%;
   max-width: 70%;
 }
 
-.topContent {
+.top-content {
   padding: 20px;
 }
 
-.mainContent {
+.main-content {
   background-color: #f5f5ff;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 }
 
-.adresscontainer {
+.address-container {
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -71,7 +71,7 @@ img {
   flex-wrap: wrap;
 }
 
-.bottomContent {
+.bottom-content {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,7 @@ p {
   font-family: Avenir;
 }
 
-.transferInfo {
+.transfer-info {
   margin: 20px;
 }
 
@@ -102,7 +102,7 @@ button {
   margin: 10px;
 }
 
-.buttonend {
+.button-end {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;

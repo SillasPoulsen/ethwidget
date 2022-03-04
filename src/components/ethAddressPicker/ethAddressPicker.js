@@ -11,12 +11,12 @@ function EthAdressPicker({ allAddresses, handleChange }) {
 
   return (
     <div className="container">
-      <div className="contentbox">
-        <div className="topContent">
+      <div className="content-box">
+        <div className="top-content">
           <p>My Ethereum Addresses</p>
         </div>
 
-        <div className="mainContent">
+        <div className="main-content">
           {allAddresses && (
             <ul>
               {allAddresses.map((address, idx) => {
@@ -31,7 +31,7 @@ function EthAdressPicker({ allAddresses, handleChange }) {
             </ul>
           )}
         </div>
-        <div className="bottomContent">
+        <div className="bottom-content">
           <p>Copy the adress from which you wish to send money</p>
           <button className="submit" type="submit" onClick={handleSubmit}>
             Next

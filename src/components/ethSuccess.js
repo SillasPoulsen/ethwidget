@@ -12,15 +12,15 @@ function EthAddressPicker({ transferInfo }) {
 
   return (
     <div className="container">
-      <div className="contentbox">
-        <div className="topContent">
+      <div className="content-box">
+        <div className="top-content">
           <p>Transaction complete</p>
         </div>
-        <div className="mainContent">
+        <div className="main-content">
           <div className="fade-in">
             <img src={Money} alt="SVG"></img>
           </div>
-          <div className="transferInfo">
+          <div className="transfer-info">
             <p>You sent</p>
             <h1>{transferInfo.amount} eth</h1>
             <hr></hr>
@@ -30,7 +30,7 @@ function EthAddressPicker({ transferInfo }) {
             <h3>To</h3>
             <p>{transferInfo.transferTo}</p>
           </div>
-          <div className="buttonend">
+          <div className="button-end">
             <button className="submit" type="submit" onClick={handleSubmit}>
               Account Balance
             </button>

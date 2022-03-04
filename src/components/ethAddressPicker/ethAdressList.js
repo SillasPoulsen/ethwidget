@@ -6,7 +6,7 @@ function EthAddressList({ address, handleChange }) {
         value={address.account}
         className={"ethAdress"}
       >
-        <div className="adresscontainer">
+        <div className="address-container">
           <p className="ethAdress" value={address.account} name="ethAdress">
             {address.account}
           </p>
