@@ -49,11 +49,12 @@ img {
 .content-box {
   border-radius: 15px;
   border: 1px solid rgba(105, 50, 212, 0.2);
-  min-width: 50%;
-  max-width: 70%;
+  max-width: 50%;
 }
 
 .top-content {
+  min-width: 350px;
+  max-width: 550px;
   padding: 20px;
 }
 
@@ -154,7 +155,13 @@ hr {
   justify-content: center;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .fade-in {
+  max-width: 450px;
   animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {

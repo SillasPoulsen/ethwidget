@@ -17,8 +17,10 @@ function EthAddressPicker({ transferInfo }) {
           <p>Transaction complete</p>
         </div>
         <div className="main-content">
-          <div className="fade-in">
-            <img src={Money} alt="SVG"></img>
+          <div className="image-container">
+            <div className="fade-in">
+              <img src={Money} alt="SVG"></img>
+            </div>
           </div>
           <div className="transfer-info">
             <p>You sent</p>
