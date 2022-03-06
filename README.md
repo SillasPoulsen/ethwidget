@@ -1,5 +1,8 @@
 # EthWidget
 
+Live version: 
+https://thirsty-hypatia-785a38.netlify.app/
+
 ## Getting Started
 
 Useful scripts:
