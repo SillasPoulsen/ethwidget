@@ -1,6 +1,6 @@
 import axios from "axios";
 import EthAddressPicker from "./ethAddressPicker/ethAddressPicker";
-import EthTransfer from "./erhTransfer.js/ethTransfer";
+import EthTransfer from "./ethTransfer.js/ethTransfer";
 import EthSuccess from "./ethSuccess";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -63,6 +63,7 @@ function EthWidget() {
         allData.forEach((result) => {
           const number = result.balance / Math.pow(10, 18);
           result.balance = Number(number.toFixed(6));
+          result.active = false;
           return allData;
         });
 
@@ -84,6 +85,7 @@ function EthWidget() {
             element={
               <EthAddressPicker
                 allAddresses={allAddresses}
+                transferInfo={transferInfo}
                 handleChange={handleChange}
               />
             }

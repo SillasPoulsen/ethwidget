@@ -1,10 +1,12 @@
-function EthAddressList({ address, handleChange }) {
+function EthAddressList({ address, handleChange, transferInfo }) {
   return (
     <>
       <li
         onClick={() => handleChange(address)}
         value={address.account}
-        className={"ethAdress"}
+        className={
+          address.account === transferInfo.account ? "selected" : "ethAdress"
+        }
       >
         <div className="address-container">
           <p className="ethAdress" value={address.account} name="ethAdress">
@@ -14,6 +16,7 @@ function EthAddressList({ address, handleChange }) {
             <b>{address.balance} ETH</b>
           </p>
         </div>
+
         <hr></hr>
       </li>
     </>

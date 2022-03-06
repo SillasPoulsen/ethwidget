@@ -1,7 +1,7 @@
 import EthAddressList from "./ethAdressList";
 import { useNavigate } from "react-router-dom";
 
-function EthAdressPicker({ allAddresses, handleChange }) {
+function EthAdressPicker({ allAddresses, handleChange, transferInfo }) {
   const navigate = useNavigate();
 
   function handleSubmit(e) {
@@ -25,6 +25,7 @@ function EthAdressPicker({ allAddresses, handleChange }) {
                     address={address}
                     handleChange={handleChange}
                     key={idx}
+                    transferInfo={transferInfo}
                   />
                 );
               })}

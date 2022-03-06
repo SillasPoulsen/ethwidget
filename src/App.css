@@ -122,6 +122,10 @@ li:hover {
   margin-right: 10px;
 }
 
+.selected {
+  color: #6932d4;
+}
+
 form {
   padding: 20px;
 }
